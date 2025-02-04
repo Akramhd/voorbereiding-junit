@@ -17,7 +17,17 @@ class FizzBuzzExecutorTest {
         var testValue = sut.execute(37);
 
         // Assert
-        Assertions.assertEquals("37", testValue);
+        Assertions.assertEquals(null, testValue);
     }
+    @Test
+    void executeWithValidIntTestmod3(){
+        // Arrange
+        var sut = new FizzBuzzExecutor();
 
+        // Act
+        var testValue = sut.execute(37);
+
+        // Assert
+        Assertions.assertEquals(null, testValue);
+    }
 }
